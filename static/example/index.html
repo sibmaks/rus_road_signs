@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../css/rrs.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<title>Описание использования библиотеки</title>
+	</head>
+	<body>
+		<div class="container">
+		  <div class="row">
+			<div class="col"></div>
+			<div class="col-10">
+				<h3>Использование библиотеки</h3>
+				<h4>Схема папок</h4>
+				<p>
+					<ul>
+						<li>css</li>
+						<li>icons</li>
+						<li>js</li>
+					</ul>
+				</p>
+				<h4>Подключить зависимости</h4>
+				<p>
+					<code>
+						&lt;link href=&quot;css/rrs.css&quot; rel=&quot;stylesheet&quot;&gt;<br/>
+						&lt;script src=&quot;js/rrs.js&quot;&gt;&lt;/script&gt;
+					</code>
+				</p>
+				<h4>Использование знаков в HTML</h4>
+				<p>
+					<p>
+						<code>
+							&lt;i class=&quot;rrs-sg rrs-px-64 rrs-sg-1-34-3-A&quot;&gt;&lt;/i&gt;
+						</code>
+					</p>
+					
+					<h5>Объяснение классов</h5>
+					<ul>
+						<li>Маркер использования библиотеки: <code>rrs-sg</code></li>
+						<li>Максимальный размер знака в пикселях: <code>rrs-px-64</code></li>
+						<li>Код знака из библиотеки: <code>rrs-sg-1-34-3-A</code></li>
+					</ul>
+					<p>Список знаков с их кодами приведён ниже.</p>
+				</p>
+
+				<h3>Демонстрация знаков</h3>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item" role="presentation">
+					<button class="nav-link active" id="warns-tab" data-bs-toggle="tab" data-bs-target="#warns" type="button" role="tab" aria-controls="warns" aria-selected="true">
+						Предупреждающие знаки
+					</button>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<button class="nav-link" id="prioritizes-tab" data-bs-toggle="tab" data-bs-target="#prioritets" type="button" role="tab" aria-controls="prioritets" aria-selected="false">
+						Знаки приоритета
+					</button>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<button class="nav-link" id="restrictions-tab" data-bs-toggle="tab" data-bs-target="#restrictions" type="button" role="tab" aria-controls="restrictions" aria-selected="false">
+						Запрещающие знаки
+					</button>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<button class="nav-link" id="mandatories-tab" data-bs-toggle="tab" data-bs-target="#mandatories" type="button" role="tab" aria-controls="mandatories" aria-selected="false">
+						Предписывающие знаки
+					</button>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<button class="nav-link" id="specials-tab" data-bs-toggle="tab" data-bs-target="#specials" type="button" role="tab" aria-controls="specials" aria-selected="false">
+						Знаки особых предписаний
+					</button>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<button class="nav-link" id="informations-tab" data-bs-toggle="tab" data-bs-target="#informations" type="button" role="tab" aria-controls="informations" aria-selected="false">
+						Информационные знаки
+					</button>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false">
+						Знаки сервиса
+					</button>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<button class="nav-link" id="add-inf-tab" data-bs-toggle="tab" data-bs-target="#add-inf" type="button" role="tab" aria-controls="add-inf" aria-selected="false">
+						Знаки дополнительной информации (таблички)
+					</button>
+				  </li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active ratio ratio-16x9" id="warns" role="tabpanel" aria-labelledby="warns-tab">
+						<iframe src="warn.html"></iframe>
+				  </div>
+				  <div class="tab-pane fade ratio ratio-16x9" id="prioritets" role="tabpanel" aria-labelledby="prioritets-tab">
+						<iframe src="prioritets.html"></iframe>
+				  </div>
+				  <div class="tab-pane fade ratio ratio-16x9" id="restrictions" role="tabpanel" aria-labelledby="restrictions-tab">
+						<iframe src="restrictions.html"></iframe>
+				  </div>
+				  <div class="tab-pane fade ratio ratio-16x9" id="mandatories" role="tabpanel" aria-labelledby="mandatories-tab">
+						<iframe src="mandatories.html"></iframe>
+				  </div>
+				  <div class="tab-pane fade ratio ratio-16x9" id="specials" role="tabpanel" aria-labelledby="specials-tab">
+						<iframe src="specials.html"></iframe>
+				  </div>
+				  <div class="tab-pane fade ratio ratio-16x9" id="informations" role="tabpanel" aria-labelledby="informations-tab">
+						<iframe src="informations.html"></iframe>
+				  </div>
+				  <div class="tab-pane fade ratio ratio-16x9" id="services" role="tabpanel" aria-labelledby="services-tab">
+						<iframe src="services.html"></iframe>
+				  </div>
+				  <div class="tab-pane fade ratio ratio-16x9" id="add-inf" role="tabpanel" aria-labelledby="add-inf-tab">
+						<iframe src="add-inf.html"></iframe>
+				  </div>
+				</div>
+			</div>
+			<div class="col"></div>
+		  </div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</body>
+</html>
